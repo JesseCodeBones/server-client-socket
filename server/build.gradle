@@ -1,0 +1,16 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+group 'org.jessecodebones.remotesocket'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation project(path:':lib')
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+}
